@@ -6,6 +6,7 @@ const AllToys = () => {
     const [toys, setToys] = useState([]);
     const [search, setSearch] = useState('');
 
+    // function for search toys by name
     const handleSearch = () => {
         fetch(`http://localhost:5000/allToys?search=${encodeURIComponent(search)}`)
             .then(res => res.json())
@@ -17,6 +18,7 @@ const AllToys = () => {
             });
     };
 
+    // data load
     useEffect(() => {
         fetch(`http://localhost:5000/allToys`)
             .then(res => res.json())

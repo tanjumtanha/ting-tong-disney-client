@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { Table, Button } from 'react-bootstrap';
+import EditToys from '../../EditToys/EditToys';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
+    const [modalShow, setModalShow] = React.useState(false);
 
     useEffect(() => {
         fetchToys();
@@ -73,12 +75,18 @@ const MyToys = () => {
                                 <td>${toy.price}</td>
                                 <td>{toy.quantity}</td>
                                 <td>
-                                    <Button variant="secondary" size="sm">
+                                    <Button variant="danger" onClick={() => setModalShow(true)}>
                                         Edit
                                     </Button>
+                                    <EditToys
+                                        show={modalShow}
+                                        onHide={() => setModalShow(false)}
+                                        toy={toy}
+                                        //handleJobUpdate={handleJobUpdate}
+                                    />
                                 </td>
                                 <td>
-                                    <Button variant="danger" size="sm">
+                                    <Button className='p-2' variant="danger" size="sm">
                                         Delete
                                     </Button>
                                 </td>
