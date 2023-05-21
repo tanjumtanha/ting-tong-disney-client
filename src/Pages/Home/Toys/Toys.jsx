@@ -48,7 +48,7 @@ const Toys = () => {
                                 }`}>Donald Duck</div>
                     </div>
                 </div>
-                <hr className='mt-0 border border-2 border-danger'/>
+                <hr className='w-75 mx-auto mt-0 border border-2 border-danger'/>
             </div>
             <div className='w-75 mx-auto'>
             <div className='card card-group' style={{backgroundColor:"lightblue"}}>
