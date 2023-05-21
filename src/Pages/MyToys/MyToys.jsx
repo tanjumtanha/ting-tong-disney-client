@@ -4,6 +4,7 @@ import { Table, Button } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import EditToys from '../../EditToys/EditToys';
+import useTitle from '../../hooks/useTitle';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -11,6 +12,8 @@ const MyToys = () => {
     const [modalShow, setModalShow] = useState(false);
     const [selectedToy, setSelectedToy] = useState(null);
     const [control, setControl] = useState(false);
+
+    useTitle('My Toys')
 
     useEffect(() => {
         fetchToys();
