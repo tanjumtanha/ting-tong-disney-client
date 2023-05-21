@@ -73,6 +73,7 @@ const AddToys = () => {
                     />
                     <input
                         className="form-control mb-3"
+                        defaultValue={user?.displayName}
                         {...register("sellerName")}
                         placeholder="Seller Name"
                     />

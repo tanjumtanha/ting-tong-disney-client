@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { toast } from 'react-toastify';
 
 const CategoryWiseToy = ({ toy }) => {
   const { _id, picture, name, price, rating } = toy || {};
@@ -39,6 +40,17 @@ const CategoryWiseToy = ({ toy }) => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  const handleViewDetails = () => {
+    const isLoggedIn = false; // Replace with your authentication logic to determine if the user is logged in
+
+    if (isLoggedIn) {
+      // User is logged in, continue with the details page navigation
+    } else {
+      // User is not logged in, show toast notification
+      toast.info('You need to log in first to view details.');
+    }
+  };
+
   return (
     <motion.div
       variants={cardVariants}
@@ -48,13 +60,13 @@ const CategoryWiseToy = ({ toy }) => {
       className="col-lg-4 col-md-6 col-sm-12"
       data-aos="fade-up" // Add data-aos attribute to enable fade-up animation
     >
-      <Card className="mb-4" style={{ backgroundColor: "lightpink" }}>
+      <Card className="mb-4" style={{ backgroundColor: 'lightpink' }}>
         <motion.img
           src={picture}
           alt={name}
           variants={imageVariants}
           className="card-img-top bg-light img-fluid"
-          style={{ height: "350px" }}
+          style={{ height: '350px' }}
           data-aos="zoom-in" // Add data-aos attribute to enable zoom-in animation
         />
         <Card.Body>
@@ -62,12 +74,16 @@ const CategoryWiseToy = ({ toy }) => {
           <Card.Text>
             <strong>Price:</strong> ${price}
             <br />
-            <div className='d-flex align-items-center'>
+            <div className="d-flex align-items-center">
               {renderRating()}
-              <span className='ms-1'>{rating}</span>
+              <span className="ms-1">{rating}</span>
             </div>
           </Card.Text>
-          <Link to={`/details/${_id}`} className="btn btn-danger">
+          <Link
+            to={`/details/${_id}`}
+            onClick={handleViewDetails}
+            className="btn btn-danger"
+          >
             View Details
           </Link>
         </Card.Body>
