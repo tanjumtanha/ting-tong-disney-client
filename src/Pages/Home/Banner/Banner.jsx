@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Banner.css';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -24,9 +25,9 @@ const Banner = () => {
                 Explore a magical world of Disney toys and create memorable moments of joy and imagination.
               </p>
               <div className="button-group">
-                <Button variant="danger" className="about-button">
+                <Link to='about'><Button variant="danger" className="about-button">
                   About
-                </Button>
+                </Button></Link>
                 <Button variant="danger" className="shop-now-button">
                   Shop Now
                 </Button>
