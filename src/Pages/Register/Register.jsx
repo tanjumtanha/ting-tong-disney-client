@@ -3,12 +3,15 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../Providers/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const Register = () => {
 
     const [error, setError] = useState('');
     const { createUser, updateUserData } = useContext(AuthContext);
     const navigate = useNavigate();
+    // page wise title show
+    useTitle('Register')
 
     //setError('');
     const handleRegister = event => {

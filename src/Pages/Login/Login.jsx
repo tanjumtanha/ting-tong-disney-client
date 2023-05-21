@@ -3,6 +3,7 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../Providers/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 
 
@@ -12,6 +13,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const location = useLocation();
+    useTitle('Login')
     const from = location.state?.from?.pathname || '/';
     //console.log(from)
 

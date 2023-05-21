@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import useTitle from '../../hooks/useTitle';
 
 const ErrorPage = () => {
+  useTitle('Error')
   return (
     <Container>
       <Row className="justify-content-center align-items-center">

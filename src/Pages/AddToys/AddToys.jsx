@@ -3,9 +3,12 @@ import { Container } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { AuthContext } from '../../Providers/AuthProvider';
 import { toast } from 'react-toastify';
+import useTitle from '../../hooks/useTitle';
 
 const AddToys = () => {
     const { user } = useContext(AuthContext);
+
+    useTitle('Add Toys')
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {

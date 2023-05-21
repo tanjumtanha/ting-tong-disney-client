@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const AllToys = () => {
     const [toys, setToys] = useState([]);
     const [search, setSearch] = useState('');
+    //page wise title change
+    useTitle('All Toys')
 
     // function for search toys by name
     const handleSearch = () => {
