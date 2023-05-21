@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CategoryWiseToy = ({ toy }) => {
   const { _id, picture, name, price, rating } = toy || {};
@@ -33,6 +35,10 @@ const CategoryWiseToy = ({ toy }) => {
     return stars;
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <motion.div
       variants={cardVariants}
@@ -40,14 +46,16 @@ const CategoryWiseToy = ({ toy }) => {
       animate="visible"
       whileHover="hover"
       className="col-lg-4 col-md-6 col-sm-12"
+      data-aos="fade-up" // Add data-aos attribute to enable fade-up animation
     >
       <Card className="mb-4" style={{ backgroundColor: "lightpink" }}>
         <motion.img
           src={picture}
           alt={name}
           variants={imageVariants}
-          className="card-img-top img-fluid"
+          className="card-img-top bg-light img-fluid"
           style={{ height: "350px" }}
+          data-aos="zoom-in" // Add data-aos attribute to enable zoom-in animation
         />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
@@ -59,7 +67,7 @@ const CategoryWiseToy = ({ toy }) => {
               <span className='ms-1'>{rating}</span>
             </div>
           </Card.Text>
-          <Link to={`/products/${_id}`} className="btn btn-danger">
+          <Link to={`/details/${_id}`} className="btn btn-danger">
             View Details
           </Link>
         </Card.Body>

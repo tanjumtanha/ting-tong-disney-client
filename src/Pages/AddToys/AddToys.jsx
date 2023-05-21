@@ -70,7 +70,7 @@ const AddToys = () => {
                     />
                     <input
                         className="form-control mb-3"
-                        {...register("seller-name")}
+                        {...register("sellerName")}
                         placeholder="Seller Name"
                     />
                     <textarea
@@ -81,7 +81,7 @@ const AddToys = () => {
                     <input
                         className="form-control mb-3"
                         defaultValue={user?.email}
-                        {...register("seller-email")}
+                        {...register("sellerEmail")}
                         placeholder="Your Email"
                         type="email"
                     />

@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <div style={{ backgroundColor: 'lightblue' }} className='mb-0'>
             <Banner></Banner>
-            <Toys></Toys>
             <Gallery></Gallery>
+            <Toys></Toys>
         </div>
     );
 };
