@@ -6,11 +6,13 @@ import EditToys from '../../EditToys/EditToys';
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
+    const [selectedToy, setSelectedToy] = useState(null);
+    const [control, setControl] = useState(false);
 
     useEffect(() => {
         fetchToys();
-    }, []);
+    }, [user, control]);
 
     const fetchToys = (sort = null) => {
         let url = `http://localhost:5000/myToys/${user?.email}`;
@@ -37,6 +39,31 @@ const MyToys = () => {
     const handleSortDescending = () => {
         const sortedToys = [...toys].sort((a, b) => b.price - a.price);
         setToys(sortedToys);
+    };
+
+    const handleEdit = (data) => {
+        fetch(`http://localhost:5000/updateToys/${data?._id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((result) => {
+                if (result.modifiedCount > 0) {
+                    setControl(!control);
+                }
+                console.log(result);
+                setModalShow(false);
+            })
+            .catch((error) => {
+                console.error('Error updating toy:', error);
+                setModalShow(false);
+            });
+    };
+
+    const handleEditClick = (toy) => {
+        setSelectedToy(toy);
+        setModalShow(true);
     };
 
     return (
@@ -75,15 +102,9 @@ const MyToys = () => {
                                 <td>${toy.price}</td>
                                 <td>{toy.quantity}</td>
                                 <td>
-                                    <Button variant="danger" onClick={() => setModalShow(true)}>
+                                    <Button variant="danger" onClick={() => handleEditClick(toy)}>
                                         Edit
                                     </Button>
-                                    <EditToys
-                                        show={modalShow}
-                                        onHide={() => setModalShow(false)}
-                                        toy={toy}
-                                        //handleJobUpdate={handleJobUpdate}
-                                    />
                                 </td>
                                 <td>
                                     <Button className='p-2' variant="danger" size="sm">
@@ -95,6 +116,12 @@ const MyToys = () => {
                     </tbody>
                 </Table>
             </div>
+            <EditToys
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                toy={selectedToy}
+                handelEdit={handleEdit}
+            />
         </div>
     );
 };

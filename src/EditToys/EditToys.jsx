@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form';
 
 const EditToys = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    // function destructure
+    const { handelEdit } = props;
+
     return (
         <div>
             <Modal
@@ -18,20 +22,23 @@ const EditToys = (props) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <form>
+                    <form className='container' onSubmit={handleSubmit(handelEdit)}>
                         {errors.exampleRequired && <span>This field is required</span>}
                         <input
                             className="form-control mb-3"
                             {...register("price")}
                             placeholder="Price"
-                            defaultValue={props?.toy?.price}
                             type="number"
+                        />
+                        <input
+                            className="text-input d-none"
+                            {...register("_id")}
+                            value={props?.toy?._id}
                         />
                         <input
                             className="form-control mb-3"
                             {...register("quantity")}
                             placeholder="Quantity"
-                            defaultValue={props?.toy?.quantity}
                             type="number"
                         />
 
