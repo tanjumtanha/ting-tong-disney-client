@@ -13,6 +13,7 @@ const Login = () => {
 
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
+    console.log(from)
 
     const handelGoogleSignIn = () => {
         // call googl sign in from auth provider
@@ -20,7 +21,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                navigate('/');
+                navigate(from,{replace:true});
             })
             .catch(error => {
                 setError(error.message)
