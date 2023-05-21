@@ -26,7 +26,7 @@ const Header = () => {
     </>
     return (
         <Navbar collapseOnSelect expand="lg" variant="light" border="danger" className='h-25' style={{backgroundColor:'lightpink'}}>
-            <Container>
+            <Container className='mt-0'>
                 <Navbar.Brand href="/"><img className='w-25 h-25 rounded-circle' src="https://i.ibb.co/dfWN0KL/39b0e73a56534f51a83542cbef2b6691-1.png" alt="Website Logo" /><span className='text-danger'>Ting Tong</span><span className='text-primary'> DisneyLand</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
