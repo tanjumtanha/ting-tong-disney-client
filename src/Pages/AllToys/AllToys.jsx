@@ -8,6 +8,14 @@ const AllToys = () => {
         <div>
             <h2 className='text-center text-danger mb-4'>ALL THE TOYS</h2>
             <div className='w-75 mx-auto table-responsive'>
+                <div className="search-box p-2 text-center">
+                    <input
+                        // onChange={(e) => setSearchText(e.target.value)}
+                        type="text"
+                        className="p-2"
+                    />{" "}
+                    <button className='btn btn-outline-danger'>Search</button>
+                </div>
                 <Table striped bordered hover>
                     <thead>
                         <tr className='text-center'>
