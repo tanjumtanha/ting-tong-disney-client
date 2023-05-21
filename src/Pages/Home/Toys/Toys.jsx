@@ -30,7 +30,7 @@ const Toys = () => {
 
     return (
         <div>
-            <h1 className="title text-center p-2">DISNEY DOLLS</h1>
+            <h1 className="title text-center p-2">WHAT WE HAVE</h1>
             <div className="text-center">
                 <div className="text-center w-100 mx-auto">
                     <div className="d-flex justify-content-center align-items-center">

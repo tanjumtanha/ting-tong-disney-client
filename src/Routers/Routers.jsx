@@ -12,6 +12,7 @@ import AddToys from "../Pages/AddToys/AddToys";
 import Blog from "../Pages/Blog/Blog";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import PrivateRoute from "./PrivateRoute";
+import ReviewPage from "../Pages/Home/ReviewPage/ReviewPage";
 const router = createBrowserRouter([
     {
         path: "/",

@@ -2,11 +2,13 @@ import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import { FaRegGrinStars } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const ViewDetails = () => {
     // data load from database
     const toy = useLoaderData();
-    console.log(toy)
+    //console.log(toy)
+    useTitle('Details')
     // destructure data
     const { picture, name, category, description, sellerEmail, sellerName, price, rating, quantity } = toy || {};
     return (

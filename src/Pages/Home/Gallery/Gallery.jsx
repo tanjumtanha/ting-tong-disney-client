@@ -42,8 +42,8 @@ const Gallery = () => {
   return (
     <div className="container mb-3" data-aos="fade-up">
       <h2 className="text-center text-danger fs-1 bold mb-2">Gallery</h2>
-      <hr className="mt-0 border border-1 border-danger" />
       <div className="w-75 mx-auto">
+        <hr className='border border-2 border-danger'/>
         <Slider {...settings}>
           {data.map((d) => (
             <div key={d._id} data-aos="zoom-in">
@@ -58,6 +58,7 @@ const Gallery = () => {
             </div>
           ))}
         </Slider>
+        <hr className='border border-2 border-danger mt-4'/>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-rating .star-filled,
+  .star-rating .star-empty,
+  .star-rating .star-half {
+    font-size: 1.5rem;
+    color: #ffc107;
+  }
+  
+  .star-rating .star-empty {
+    color: #ddd;
+  }
+  
+  .star-rating .star-half {
+    color: #ffc107;
+  }
+  
+  .star-rating-value {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .review-user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
