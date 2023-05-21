@@ -4,7 +4,7 @@ import './Banner.css';
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner p-3">
       <Container>
         <Row>
           <Col md={6} className="d-flex align-items-center justify-content-center mb-4 mb-md-0">
