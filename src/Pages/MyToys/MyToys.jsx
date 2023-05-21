@@ -17,7 +17,7 @@ const MyToys = () => {
     }, [user, control]);
 
     const fetchToys = (sort = null) => {
-        let url = `http://localhost:5000/myToys/${user?.email}`;
+        let url = `https://ting-tong-disneyland-server.vercel.app/myToys/${user?.email}`;
 
         if (sort) {
             url += `?sort=${sort}`;
@@ -44,7 +44,7 @@ const MyToys = () => {
     };
 
     const handleEdit = (data) => {
-        fetch(`http://localhost:5000/updateToys/${data?._id}`, {
+        fetch(`https://ting-tong-disneyland-server.vercel.app/updateToys/${data?._id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data),
@@ -76,7 +76,7 @@ const MyToys = () => {
     };
 
     const deleteToy = (toyId) => {
-        fetch(`http://localhost:5000/deleteToy/${toyId}`, {
+        fetch(`https://ting-tong-disneyland-server.vercel.app/deleteToy/${toyId}`, {
             method: 'DELETE',
         })
             .then((res) => res.json())

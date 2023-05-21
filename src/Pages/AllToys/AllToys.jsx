@@ -8,7 +8,7 @@ const AllToys = () => {
 
     // function for search toys by name
     const handleSearch = () => {
-        fetch(`http://localhost:5000/allToys?search=${encodeURIComponent(search)}`)
+        fetch(`https://ting-tong-disneyland-server.vercel.app/allToys?search=${encodeURIComponent(search)}`)
             .then(res => res.json())
             .then(data => {
                 setToys(data);
@@ -20,7 +20,7 @@ const AllToys = () => {
 
     // data load
     useEffect(() => {
-        fetch(`http://localhost:5000/allToys`)
+        fetch(`https://ting-tong-disneyland-server.vercel.app/allToys`)
             .then(res => res.json())
             .then(data => {
                 setToys(data);

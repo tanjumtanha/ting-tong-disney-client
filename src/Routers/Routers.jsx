@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             {
                 path: 'alltoys',
                 element: <AllToys></AllToys>,
-                loader: ()=>fetch('http://localhost:5000/allToys')
+                loader: ()=>fetch('https://ting-tong-disneyland-server.vercel.app/allToys')
             },
             {
                 path: 'mytoys',
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
             {
                 path:'/details/:id',
                 element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)
+                loader: ({params}) => fetch(`https://ting-tong-disneyland-server.vercel.app/details/${params.id}`)
             },
             {
                 path: 'blog',

@@ -11,7 +11,7 @@ const Toys = () => {
 
     useEffect(() => {
         setTimeout(() => {
-        fetch(`http://localhost:5000/allToys/${activeTab}`)
+        fetch(`https://ting-tong-disneyland-server.vercel.app/allToys/${activeTab}`)
             .then(res => res.json())
             .then(data => {
                 setToys(data)

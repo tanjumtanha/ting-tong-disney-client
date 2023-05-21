@@ -13,7 +13,7 @@ const Login = () => {
 
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
-    console.log(from)
+    //console.log(from)
 
     const handelGoogleSignIn = () => {
         // call googl sign in from auth provider

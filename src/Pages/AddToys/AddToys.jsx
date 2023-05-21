@@ -12,7 +12,7 @@ const AddToys = () => {
         toast.error('Toys added to server successfully!!', {
             position: toast.POSITION.TOP_CENTER
         });
-        fetch('http://localhost:5000/addToys', {
+        fetch('https://ting-tong-disneyland-server.vercel.app/addToys', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
