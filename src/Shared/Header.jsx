@@ -35,6 +35,7 @@ const Header = () => {
                         <ActiveRouter to='/alltoys'>All Toys</ActiveRouter>
                         {navItems}
                         <ActiveRouter to='/blog'>Blog</ActiveRouter>
+                        <ActiveRouter to='/about'>About Us</ActiveRouter>
                     </Nav>
                     <Nav>
                         {/* tooltip used when user will hover the image icon it will show user name */}
