@@ -1,0 +1,74 @@
+.banner {
+    padding: 50px 0;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  
+  .website-name {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s forwards;
+  }
+  
+  .website-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideInRight 1s forwards;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .about-button {
+    margin-right: 10px;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .img-animation {
+    animation: scale-in 1s ease-in-out;
+  }
+  
+  @keyframes scale-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

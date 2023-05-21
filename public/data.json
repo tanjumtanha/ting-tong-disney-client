@@ -1,0 +1,178 @@
+[
+    {
+        "category": "Disney Princes",
+        "name": "Prince Charming",
+        "picture": "https://i.ibb.co/SPBnsWx/fro4.jpg",
+        "price": 29.99,
+        "rating": 4.5,
+        "seller-name": "Disney Store",
+        "seller-email": "info@disneystore.com",
+        "seller-description": "The official Disney Store offers a wide range of authentic Disney merchandise, including the enchanting Prince Charming doll.",
+        "quantity": 10
+    },
+    {
+        "category": "Disney Princes",
+        "name": "Beast",
+        "picture": "https://i.ibb.co/ThRnDgL/fro2.jpg",
+        "price": 34.99,
+        "rating": 4.8,
+        "seller-name": "Toys R Us",
+        "seller-email": "customerservice@toysrus.com",
+        "seller-description": "Toys R Us is a renowned toy retailer that provides high-quality toys, including the Beast doll from Disney's Beauty and the Beast.",
+        "quantity": 8
+    },
+    {
+        "category": "Disney Princes",
+        "name": "Aladdin",
+        "picture": "https://i.ibb.co/K2W5GzN/fro3.jpg",
+        "price": 27.99,
+        "rating": 4.2,
+        "seller-name": "Amazon",
+        "seller-email": "support@amazon.com",
+        "seller-description": "Amazon offers a vast selection of Disney merchandise, including the Aladdin doll featuring the adventurous hero.",
+        "quantity": 12
+    },
+    {
+        "category": "Disney Princes",
+        "name": "Prince Eric",
+        "picture": "https://i.ibb.co/RTRt90k/ting6.jpg",
+        "price": 32.99,
+        "rating": 4.6,
+        "seller-name": "Walmart",
+        "seller-email": "customerservice@walmart.com",
+        "seller-description": "Walmart is a leading retailer that offers a diverse range of toys, including the Prince Eric doll from Disney's The Little Mermaid.",
+        "quantity": 5
+    },
+    {
+        "category": "Frozen Dolls",
+        "name": "Elsa",
+        "picture": "https://i.ibb.co/CBkdLN3/fro1.jpg",
+        "price": 19.99,
+        "rating": 4.7,
+        "seller-name": "Target",
+        "seller-email": "guestservice@target.com",
+        "seller-description": "Target is a popular retail destination offering a variety of Disney merchandise, including the beloved Elsa doll from Frozen.",
+        "quantity": 15
+    },
+    {
+        "category": "Frozen Dolls",
+        "name": "Anna",
+        "picture": "https://i.ibb.co/ThRnDgL/fro2.jpg",
+        "price": 18.99,
+        "rating": 4.4,
+        "seller-name": "Disney Store",
+        "seller-email": "info@disneystore.com",
+        "seller-description": "The official Disney Store provides a wide range of authentic Disney products, including the Anna doll from the hit movie Frozen.",
+        "quantity": 20
+    },
+    {
+        "category": "Frozen Dolls",
+        "name": "Olaf",
+        "picture": "https://i.ibb.co/C2yk7mk/ting3.jpg",
+        "price": 14.99,
+        "rating": 4.3,
+        "seller-name": "Toys R Us",
+        "seller-email": "customerservice@toysrus.com",
+        "seller-description": "Toys R Us is a renowned toy retailer that offers a variety of toys, including the lovable Olaf doll from Disney's Frozen.",
+        "quantity": 7
+    },
+    {
+        "category": "Frozen Dolls",
+        "name": "Kristoff",
+        "picture": "https://i.ibb.co/FW4zgcT/ting4.jpg",
+        "price": 21.99,
+        "rating": 4.9,
+        "seller-name": "Walmart",
+        "seller-email": "customerservice@walmart.com",
+        "seller-description": "Walmart is a leading retailer that provides a diverse range of toys, including the Kristoff doll from Disney's Frozen franchise.",
+        "quantity": 9
+    },
+    {
+        "category": "Animation Characters",
+        "name": "Mickey Mouse",
+        "picture": "https://i.ibb.co/TPrbMVN/ani3.jpg",
+        "price": 12.99,
+        "rating": 4.7,
+        "seller-name": "Disney Store",
+        "seller-email": "info@disneystore.com",
+        "seller-description": "The official Disney Store offers a wide range of authentic Disney merchandise, including the iconic Mickey Mouse doll.",
+        "quantity": 25
+    },
+    {
+        "category": "Animation Characters",
+        "name": "Jerry",
+        "picture": "https://i.ibb.co/GHCLPPL/ani4.jpg",
+        "price": 12.99,
+        "rating": 4.6,
+        "seller-name": "Target",
+        "seller-email": "guestservice@target.com",
+        "seller-description": "Target is a popular retail destination offering a variety of Disney merchandise, including the beloved Minnie Mouse doll.",
+        "quantity": 30
+    },
+    {
+        "category": "Animation Characters",
+        "name": "Donald Duck",
+        "picture": "https://i.ibb.co/M9Q8Zd7/donal2.jpg",
+        "price": 11.99,
+        "rating": 4.5,
+        "seller-name": "Walmart",
+        "seller-email": "customerservice@walmart.com",
+        "seller-description": "Walmart is a leading retailer that provides a diverse range of toys, including the iconic Donald Duck doll.",
+        "quantity": 15
+    },
+    {
+        "category": "Animation Characters",
+        "name": "Goofy",
+        "picture": "https://i.ibb.co/mthyGq9/ani1.webp",
+        "price": 11.99,
+        "rating": 4.3,
+        "seller-name": "Toys R Us",
+        "seller-email": "customerservice@toysrus.com",
+        "seller-description": "Toys R Us is a renowned toy retailer that offers a variety of toys, including the lovable Goofy doll.",
+        "quantity": 10
+    },
+    {
+        "category": "Donald Duck",
+        "name": "Classic Donald Duck",
+        "picture": "https://i.ibb.co/T4Wj88F/donal3.png",
+        "price": 9.99,
+        "rating": 4.4,
+        "seller-name": "Disney Store",
+        "seller-email": "info@disneystore.com",
+        "seller-description": "The official Disney Store offers a wide range of authentic Disney merchandise, including the classic Donald Duck doll.",
+        "quantity": 20
+    },
+    {
+        "category": "Donald Duck",
+        "name": "Sailor Donald Duck",
+        "picture": "https://i.ibb.co/M7jFxR2/donal4.jpg",
+        "price": 8.99,
+        "rating": 4.3,
+        "seller-name": "Target",
+        "seller-email": "guestservice@target.com",
+        "seller-description": "Target is a popular retail destination offering a variety of Disney merchandise, including the Sailor Donald Duck doll.",
+        "quantity": 15
+    },
+    {
+        "category": "Donald Duck",
+        "name": "Football Donald Duck",
+        "picture": "https://i.ibb.co/M9Q8Zd7/donal2.jpg",
+        "price": 10.99,
+        "rating": 4.5,
+        "seller-name": "Walmart",
+        "seller-email": "customerservice@walmart.com",
+        "seller-description": "Walmart is a leading retailer that provides a diverse range of toys, including the Football Donald Duck doll.",
+        "quantity": 10
+    },
+    {
+        "category": "Donald Duck",
+        "name": "Pirate Donald Duck",
+        "picture": "https://i.ibb.co/vBJttky/donal1.png",
+        "price": 9.99,
+        "rating": 4.4,
+        "seller-name": "Toys R Us",
+        "seller-email": "customerservice@toysrus.com",
+        "seller-description": "Toys R Us is a renowned toy retailer that offers a variety of toys, including the Pirate Donald Duck doll.",
+        "quantity": 12
+    }
+]
